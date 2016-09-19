@@ -3,7 +3,9 @@
 
 ####INTRODUCTION####
 Silicon Dust's HD Homerun PRIME is a cable TV tuner-over-IP solution. It's wonderful for watching your cable channels within your own network, but bandwidth constraints make it challenging to use on-the go. Since it lacks an H.264 native transcoder, I am proposing an "alien" transcoder.
+
 Most plugins for media centers like Plex do not support transcoding, or have some complicated setup. Alien FFMPEG Transcoder is my attempt at an elegant solution to use one of the best freely available transcoders (FFMPEG) with the minimal about of supporting applications.
+
 Rather than choosing a better-known PHP/Javascript stack, Python's WSGI appears to provide a path handle operation of FFMPEG/FFServer using a single, short script. Theoretically, this middleware should allow more resources to be used for transcoding purposes.
 My hope is to develop the Alien FFMPEG Transcoder to a point that it is the preferred method for other developers to connect with the HD HomeRun.
 
@@ -41,5 +43,5 @@ If FFServer is exposed to the local LAN (in my script, it's on Loopback), browsi
 ###Resources###
 - [Getting Started with WSGI](http://lucumr.pocoo.org/2007/5/21/getting-started-with-wsgi/)
 - [heroku-buildpack-python-ffmpeg-imagick](https://github.com/theantonius/heroku-buildpack-python-ffmpeg-imagick/blob/master/test/django-1.4-skeleton/haystack/wsgi.py)
--[Implementing a WSGI Streaming Service/how to detect client disconnects](http://stackoverflow.com/questions/8371807/implementing-a-wsgi-streaming-service-how-to-detect-client-disconnects)
+- [Implementing a WSGI Streaming Service/how to detect client disconnects](http://stackoverflow.com/questions/8371807/implementing-a-wsgi-streaming-service-how-to-detect-client-disconnects)
 - [Subprocess-call-ffmpeg-command-line](http://stackoverflow.com/questions/25955322/subprocess-call-ffmpeg-command-line)
