@@ -8,8 +8,7 @@ Rather than choosing a better-known PHP/Javascript stack, Python's WSGI appears 
 My hope is to develop the Alien FFMPEG Transcoder to a point that it is the preferred method for other developers to connect with the HD HomeRun.
 
 ####HOW IT WORKS####
-As a refresher, HD HomeRun PRIME will 'lock' one of its 3 tuners when a client device navigates to the following path:
-* http://HDHR_IP:5004/tuner/channels
+As a refresher, HD HomeRun PRIME will 'lock' one of its 3 tuners when a client device navigates to the following path: `http://HDHR_IP:5004/tuner/channels`
 
 where:
 - HDHR_IP = the IP of the PRIME
@@ -17,7 +16,7 @@ where:
 - Channel = the number of the channel (must add a 'v' in front)
 
 FFServer is installed with FFMPEG. Setting it as a service and setting the proper configurations within ffserver.conf allows FFServer to stream HDHR using the following command line syntax:
-'ffmpeg -i "http://HDHR_IP:5004/auto/channel" "http://127.0.0.1:8090/tuner1.ffm"'
+`ffmpeg -i "http://HDHR_IP:5004/auto/channel" "http://127.0.0.1:8090/tuner1.ffm"`
 
 If FFServer is exposed to the local LAN (in my script, it's on Loopback), browsing the following path shows the associated stream (by resolution):
 + http://ffserver:8090/tuner1_480.ts
