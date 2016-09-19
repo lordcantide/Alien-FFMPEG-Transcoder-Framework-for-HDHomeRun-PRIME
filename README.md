@@ -41,5 +41,5 @@ If FFServer is exposed to the local LAN (in my script, it's on Loopback), browsi
 ###Resources###
 - [Getting Started with WSGI](http://lucumr.pocoo.org/2007/5/21/getting-started-with-wsgi/)
 - [heroku-buildpack-python-ffmpeg-imagick](https://github.com/theantonius/heroku-buildpack-python-ffmpeg-imagick/blob/master/test/django-1.4-skeleton/haystack/wsgi.py)
--[Implementing a WSGI Streaming Service/how to detect client disconnects](http://stackoverflow.com/questions/8371807/implementing-a-wsgi-streaming-service-how-to-detect-client-disconnects)
+- [Implementing a WSGI Streaming Service/how to detect client disconnects](http://stackoverflow.com/questions/8371807/implementing-a-wsgi-streaming-service-how-to-detect-client-disconnects)
 - [Subprocess-call-ffmpeg-command-line](http://stackoverflow.com/questions/25955322/subprocess-call-ffmpeg-command-line)
